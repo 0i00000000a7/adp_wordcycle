@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+:root {
+  /*从styles.css复制过来的，注意一定要用hex的写法，不然会报错 */
+  --color-text: #000000;
+  --color-base: #f2f2f2;
+  --color-disabled: #a3a3a3;
+  --color-accent: #4980cc;
+  --color-good: #5ac467;
+  --color-good-dark: #127a20;
+  --color-good-paused: #e3e638;
+  --color-bad: #b84b5f;
+  --color-gh-purple: #8957e5;
+  --color-notification: #ff0000;
+  --color-ad: #B0E236;
+
+  --color-antimatter: #2196f3;
+  --color-infinity: #b67f33;
+  --color-eternity: #b341e0;
+  --color-dilation: #64dd17;
+  --color-reality: #0ba00e;
+  --color-reality-light: #d5ffd7;
+  --color-reality-dark: #0a790c;
+  --color-celestials: #5151ec;
+
+  --color-teresa--base: #5151ec;
+
+  --color-effarig--base: #d13737;
+
+  --color-enslaved--base: #f1aa7f;
+
+  --color-v--base: #ead584;
+
+  --color-ra--base: #9575cd;
+  --color-ra-pet--teresa: #8596ea;
+  --color-ra-pet--effarig: #ea8585;
+  --color-ra-pet--enslaved: #f1aa7f;
+  --color-ra-pet--v: #ead584;
+
+  --color-laitela--base: #000000;
+  --color-laitela--accent: #ffffff;
+
+  --color-pelle--base: #dc143c;
+  --color-pelle--secondary: #00bcd4;
+  
+  --color-poincare--base: #FF00FF;
+}
+
+
+@font-face {
+  font-family: MonospaceTypewriter;
+  src:url("MonospaceTypewriter.ttf");
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
