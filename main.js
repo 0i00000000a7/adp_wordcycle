@@ -133,35 +133,61 @@ const cycleContent = [
     },
   {
     text: "Archemede",
-    color: getColor("teresa--base")
+    color: getColor("archemede--base")
     },
   {
     text: "Einstein",
-    color: getColor("effarig--base")
+    color: getColor("einstein--base")
     },
   {
     text: "Newton",
-    color: getColor("enslaved--base")
+    color: getColor("newton--base")
     },
   {
     text: "Joule",
-    color: getColor("v--base")
+    color: getColor("joule--base")
     },
   {
     text: "Planck",
-    color: getColor("ra--base")
+    color: getColor("planck--base")
     },
   {
     text: "Kelvin",
-    color: getColor("laitela--base")
+    color: getColor("kelvin--base")
     },
   {
     text: "Boltzmann",
-    color: getColor("pelle--base")
+    color: getColor("boltzmann--base")
     },
   {
     text: "Poincare",
     color: getColor("poincare--base")
+    },
+  {
+    text: "Pascal",
+    color: getColor("pascal--base")
+    },
+  {
+    text: "Gauss",
+    color: getColor("gauss--base")
+    },
+  {
+    text: "Ellep",
+    color: getColor("ellep--base")
+    },
+  {
+    text: "Reinahitomi",
+    color: getColor("reinahitomi--base")
+    },
+  {
+    text: "Relitus",
+    color: getColor("relitus--base")
+    },
+  {
+    text: "Mandelbrot",
+    get color() {
+        return getUndulatingColor()
+      }
     },
   ]
 
@@ -216,3 +242,10 @@ frame()
 //在第二次出现Teresa时结束
 //结束后会在html中添加一个video元素
 //下载视频后到[视频转gif]相关网站转换
+function getUndulatingColor(period = Math.sqrt(20.24)) {
+  let t = new Date().getTime()
+  let a = Math.sin(t / 1e3 / period * 2 * Math.PI + 0)
+  let b = Math.sin(t / 1e3 / period * 2 * Math.PI + 2)
+  let c = Math.sin(t / 1e3 / period * 2 * Math.PI + 4)
+  return [a*128+128,b*128+128,c*128+128]
+}

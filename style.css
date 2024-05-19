@@ -49,9 +49,20 @@ html, body {
   --color-laitela--accent: #ffffff;
 
   --color-pelle--base: #dc143c;
-  --color-pelle--secondary: #00bcd4;
+  --color-archemede--base: #2196f3;
+  --color-einstein--base: #24ff17;
+  --color-newton--base: #ead584;
+  --color-joule--base: #ffaa7f;
+  --color-planck--base: #ff00ef;
+  --color-kelvin--base: #ffffff;
+  --color-boltzmann--base: #dc143c;
   
   --color-poincare--base: #FF00FF;
+  --color-pascal--base: #ffbbef;
+  --color-gauss--base: #64dd17;
+  --color-ellep--base: #ffaaef;
+  --color-reinahitomi--base: #111111;
+  --color-relitus--base: #7f00ff;
 }
 
 
